@@ -63,7 +63,16 @@
                     result: count * e.target.value
                 });
             }
-            console.log(operations);
+            operations.forEach(operation => {
+                const timesTableRow = document.createElement('tr');
+                for (const value of Object.values(operation)) {
+                    const timesTableCell = document.createElement('td');
+                    const timesTableCellContent = document.createTextNode(`${value}`);
+                    timesTableCell.appendChild(timesTableCellContent);
+                    timesTableRow.appendChild(timesTableCell);
+                }
+                timesTableBody.appendChild(timesTableRow);
+            });
         });
     </script>
 </body>
