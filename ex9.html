@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercise 9</title>
+    <style>
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        table,
+        th,
+        td {
+            border: thin solid grey;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        th,
+        td {
+            padding: .125rem .25rem;
+        }
+        .number-form {
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Times Table</h1>
+    <form id="NumberForm" class="number-form">
+        <label for="NumberField">Insert a Number</label>
+        <input type="number" id="NumberField">
+    </form>
+    <table id="TimesTable">
+        <thead>
+            <th>Formula</th>
+            <th>Result</th>
+        </thead>
+        <tbody id="TimesTableBody">
+            <!-- <tr>
+                <td colspan="2">No results</td>
+            </tr> -->
+            <!-- <tr id="TimesTableRow" ng-model="equation in equations">
+                <td>
+                    {{ equation.description }}
+                </td>
+                <td>
+                    {{ equation.result }}
+                </td>
+            </tr> -->
+        </tbody>
+    </table>
+    <script>
+        const numberField = document.querySelector('#NumberField');
+        const timesTableBody = document.querySelector('#TimesTableBody');
+        numberField.addEventListener('change', e => {
+            const operations = [];
+            for (let count = 1; count <= 10; count++) {
+                operations.push({
+                    formula: `${count} x ${e.target.value}`,
+                    result: count * e.target.value
+                });
+            }
+            console.log(operations);
+        });
+    </script>
+</body>
+</html>
