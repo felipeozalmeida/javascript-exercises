@@ -93,6 +93,7 @@
               result: count * e.target.value
             });
           }
+          timesTableBody.innerHTML = '';
           operations.forEach(operation => {
             const timesTableRow = document.createElement('tr');
             for (const value of Object.values(operation)) {
