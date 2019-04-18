@@ -60,12 +60,12 @@
       const operations = [];
       const handleChange = e => {
         if (isNaN(e.target.value)) {
-          message.style.display = 'block';
+          message.style.display = 'inline-block';
           message.classList.remove('message--warning');
           message.classList.add('message--error');
           message.textContent = 'Not a number!';
         } else if (e.target.value.trim() === '') {
-          message.style.display = 'block';
+          message.style.display = 'inline-block';
           message.classList.remove('message--error');
           message.classList.add('message--warning');
           message.textContent = 'Please insert a number!';
