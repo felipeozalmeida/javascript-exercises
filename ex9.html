@@ -64,7 +64,7 @@
           message.classList.remove('message--warning');
           message.classList.add('message--error');
           message.textContent = 'Not a number!';
-        } else if (e.target.value === '') {
+        } else if (e.target.value.trim() === '') {
           message.style.display = 'block';
           message.classList.remove('message--error');
           message.classList.add('message--warning');
