@@ -9,6 +9,15 @@
   <body>
     <h1>Transactions</h1>
     <script>
+      // Declaration of immutable values following
+      // Google Javascript Style Guide found here:
+      // https://google.github.io/styleguide/jsguide.html#naming-enum-names
+
+      const PaymentOption = {
+        CASH: 'cash',
+        CREDIT: 'credit'
+      };
+
       const transactions = [];
       let totalCash = 0;
       let totalCreditCard = 0;
@@ -23,10 +32,10 @@
         const paymentOption = prompt(
           'What\'s the transaction type: "cash" or "credit"? (default: cash)'
         );
-        if (paymentOption === 'credit') {
+        if (paymentOption === PaymentOption.CREDIT) {
           transaction.type = paymentOption;
         } else {
-          transaction.type = 'cash';
+          transaction.type = PaymentOption.CASH;
         }
         transaction.value = parseFloat(prompt("What's the transaction value?"));
         transactions.push(transaction);
