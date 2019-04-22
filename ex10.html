@@ -20,9 +20,14 @@
           type: '',
           value: 0
         };
-        transaction.type = prompt(
-          "What's the transaction type? (cash OR credit)"
+        const paymentOption = prompt(
+          'What\'s the transaction type: "cash" or "credit"? (default: cash)'
         );
+        if (paymentOption === 'credit') {
+          transaction.type = paymentOption;
+        } else {
+          transaction.type = 'cash';
+        }
         transaction.value = parseFloat(prompt("What's the transaction value?"));
         transactions.push(transaction);
       }
