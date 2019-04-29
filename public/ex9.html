@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Exercise 9</title>
+    <style>
+      label {
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+      table,
+      th,
+      td {
+        border: thin solid grey;
+      }
+      table {
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        padding: 0.125rem 0.25rem;
+      }
+      .number-form {
+        margin-bottom: 1rem;
+      }
+      .message {
+        display: none;
+        background-color: #eee;
+        padding: 1rem;
+        margin-bottom: 1rem;
+      }
+      .message--error {
+        background-color: #fdd;
+      }
+      .message--warning {
+        background-color: #ffb;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Times Table</h1>
+    <form id="NumberForm" class="number-form">
+      <label for="NumberField">Insert a Number</label>
+      <input type="text" id="NumberField" />
+    </form>
+    <div id="Message" class="message">This is a message!</div>
+    <table id="TimesTable">
+      <thead>
+        <th>Formula</th>
+        <th>Result</th>
+      </thead>
+      <tbody id="TimesTableBody"></tbody>
+    </table>
+    <noscript>You should enable Javascript in order to run this app.</noscript>
+    <script src="./scripts/ex9.min.js"></script>
+  </body>
+</html>
