@@ -1,0 +1,26 @@
+{
+  "name": "javascript-exercises",
+  "version": "1.0.0",
+  "description": "This repository is intended to showcase my abilities, oops, publish some Javascript exercises that I've got to do in college.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felipeozalmeida/javascript-exercises.git"
+  },
+  "keywords": [
+    "javascript",
+    "exercises",
+    "javascript-exercises",
+    "loops",
+    "javascript-loops",
+    "es6"
+  ],
+  "author": "Felipe Almeida",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/felipeozalmeida/javascript-exercises/issues"
+  },
+  "homepage": "https://github.com/felipeozalmeida/javascript-exercises#readme"
+}
