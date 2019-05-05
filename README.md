@@ -1,8 +1,8 @@
 # Javascript exercise list
 
-This repository is intended to showcase my abilities, oops, publish some Javascript exercises that I've got to do in college [**UPDATE** 4/22/19: I've modified (and I'm modifying) them a little bit to make things interesting]. Since there's a LOT of them, I'll be adding each one as I solve along with their descriptions. With this, I hope that who's learning JS find it useful.
+This repository is intended to showcase my abilities, oops, publish some Javascript exercises that I've got to do in college [**UPDATE** 4/22/19: I've modified (and I'm modifying) them a little bit to make things interesting]. Since there's a LOT of them, I'll be adding each one as I solve along with their descriptions. With this, I hope that who's learning JS too find it useful.
 
-Disclaimer: I'm not worried about backward compatibility here as I'm doing this for fun (sorry Babel).
+Disclaimer: Don't worry about supporting legacy browsers just yet. You can learn how to transpile to ES5 later.
 
 ## Table of contents
 
@@ -19,21 +19,18 @@ Disclaimer: I'm not worried about backward compatibility here as I'm doing this 
 
 ## Quick start
 
-Just for you to get experience using npm in case you don't have. The commands below will install and enable [Prettier](https://prettier.io/) (a nice opiniated code formatter by the way)!
-
-1. Install node
-2. Clone the repo: `git clone https://github.com/felipeozalmeida/javascript-exercises.git`
-3. Run: `npm install`
+Description (work in progress).
 
 ## Exercises
 
-I didn't set up difficulty levels for each one because they can be improved almost indefinitely. If you don't know how to approach each problem or want to apply all the JS concepts that you're learning, I suggest the following progressive workflow:
+I didn't set up difficulty levels for each one because they can be improved almost indefinitely. If you don't know how to approach each problem or want to apply all the JS concepts that you're learning, I suggest the following progressive workflow (that's what I'm doing by the way):
 
-1. Solve it the simplest way first;
-2. Render your app in the DOM;
-3. Set up a notification system;
+1. Solve it with prompts and alerts (don't touch the DOM);
+2. Render your app in the DOM (finally);
+3. Set up a notification system using validation;
 4. Fake a client server communication;
-5. Make use of object oriented JS.
+5. Make use of object oriented JS;
+6. Set up build tools.
 
 Good luck and have fun!
 
