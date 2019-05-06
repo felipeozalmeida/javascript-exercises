@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "This repository is intended to showcase my abilities, oops, publish some Javascript exercises that I've got to do in college.",
   "scripts": {
-    "lint": "eslint .",
-    "lint:fix": "eslint --fix .",
+    "lint": "eslint **/*.js",
+    "lint:fix": "eslint --fix **/*.js",
     "pretest": "npm run lint",
-    "prettier:check": "prettier --list-different **/*.js",
+    "prettier": "prettier --check **/*.js",
     "prettier:fix": "prettier --write **/*.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
