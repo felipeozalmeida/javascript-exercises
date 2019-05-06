@@ -17,5 +17,5 @@ groups.forEach((group, groupIndex) => {
   group.forEach((value, index) => {
     document.write(`groups[${groupIndex}][${index}] = ${value}<br>`);
   });
-  document.write("<br>");
+  document.write('<br>');
 });

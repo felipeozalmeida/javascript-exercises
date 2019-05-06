@@ -1,9 +1,9 @@
-const body = document.querySelector("body");
+const body = document.querySelector('body');
 const clients = [];
 let i = 0;
 do {
   const client = {
-    name: "",
+    name: '',
     money: 0,
     discount: 0
   };
