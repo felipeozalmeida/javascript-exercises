@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "This repository is intended to showcase my abilities, oops, publish some Javascript exercises that I've got to do in college.",
   "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "pretest": "npm run lint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,5 +25,13 @@
   "bugs": {
     "url": "https://github.com/felipeozalmeida/javascript-exercises/issues"
   },
-  "homepage": "https://github.com/felipeozalmeida/javascript-exercises#readme"
+  "homepage": "https://github.com/felipeozalmeida/javascript-exercises#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-node": "^9.0.1",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0"
+  }
 }
