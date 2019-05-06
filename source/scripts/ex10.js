@@ -3,8 +3,8 @@
 // https://google.github.io/styleguide/jsguide.html#naming-enum-names
 
 const PaymentOption = {
-  CASH: "cash",
-  CREDIT: "credit"
+  CASH: 'cash',
+  CREDIT: 'credit'
 };
 
 const transactions = [];
@@ -15,7 +15,7 @@ let totalOverall = 0;
 for (let i = 0; i < 3; i++) {
   const transaction = {
     id: i,
-    type: "",
+    type: '',
     value: 0
   };
   const paymentOption = prompt(
@@ -32,7 +32,7 @@ for (let i = 0; i < 3; i++) {
 
 transactions.forEach(transaction => {
   totalOverall += transaction.value;
-  if (transaction.type === "cash") {
+  if (transaction.type === 'cash') {
     totalCash += transaction.value;
   } else {
     totalCreditCard += transaction.value;
@@ -44,7 +44,7 @@ alert(`Total by credit card: $ ${totalCreditCard}`);
 alert(`Total overall: $ ${totalOverall}`);
 
 transactions.forEach(transaction => {
-  if (transaction.type !== "cash") {
+  if (transaction.type !== 'cash') {
     alert(
       `First installment of transaction ${transaction.id}: $ ${(
         transaction.value / 3
